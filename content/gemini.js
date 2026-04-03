@@ -1,6 +1,6 @@
 // prompt navigator - gemini (combined)
 
-const GEMINI_PROMPT_SELECTOR = "span.user-query-bubble-with-background";
+const GEMINI_PROMPT_SELECTOR = "user-query-content";
 
 let prompts = [];
 let currentIndex = -1;
@@ -107,10 +107,23 @@ function renderPanel() {
     item.className = "pn-item";
     if (index === currentIndex) item.classList.add("pn-item-active");
 
-    const textEl = prompt.querySelector("div.query-text");
-    const text = textEl ? truncateText(textEl.innerText) : `Prompt ${index + 1}`;
+    // Because 'prompt' is now the outer wrapper, we can just look directly inside it
+    const hasImage = prompt.querySelector('img[data-test-id="uploaded-img"], img.preview-image');
+    const imageIndicator = hasImage ? "📸 " : "";
 
-    item.textContent = `${index + 1}. ${text}`;
+    // Look for the text bubble inside this wrapper
+    const textEl = prompt.querySelector("div.query-text, span.user-query-bubble-with-background");
+    let text = textEl ? truncateText(textEl.innerText) : "";
+    
+    // Fallbacks
+    if (!text && hasImage) {
+        text = "[Image only]";
+    } else if (!text && !hasImage) {
+        text = `Prompt ${index + 1}`;
+    }
+
+    item.textContent = `${index + 1}. ${imageIndicator}${text}`;
+    
     item.addEventListener("click", () => {
       navigateTo(index);
       renderPanel();
