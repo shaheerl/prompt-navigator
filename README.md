@@ -14,7 +14,7 @@ Prompt Navigator is designed to work across the most popular AI interfaces:
 * **Meta AI**
 * **Grok** (xAI)
 
-## 💡 Troubleshooting
+## Troubleshooting
 If you do not see the navigation buttons at the bottom right of chat, please:
 1. Refresh the page
 2. Asking 1 prompt (if there aren't any already) and refresh the page.
