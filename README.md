@@ -15,7 +15,8 @@ Prompt Navigator is designed to work across the most popular AI interfaces:
 * **Grok** (xAI)
 
 ## 💡 Troubleshooting
-If the extension is active but you do not see the navigation buttons at the bottom right of your chat interface:
-> **Note:** Please **refresh the page**. 
+If you do not see the navigation buttons at the bottom right of chat, please:
+1. Refresh the page
+2. Asking 1 prompt (if there aren't any already) and refresh the page.
 
 Most AI platforms (like ChatGPT or Gemini) use dynamic loading, so hitting refresh allows the Prompt Navigator to hook into the chat window correctly.
