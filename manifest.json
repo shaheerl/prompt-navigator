@@ -18,7 +18,7 @@
     "default_title": "Prompt Navigator"
   },
 
-  "description": "Navigate your AI chat prompts efficiently.\nSupports: Gemini, Claude, ChatGPT, Copilot, Perplexity, DeepSeek, Poe, Meta AI, and Grok.",
+  "description": "Navigate your AI chat prompts efficiently.\nFor a full list of supported models visit: https://github.com/shaheerl/prompt-navigator",
   "permissions": [
     "activeTab"
   ],
