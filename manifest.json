@@ -1,15 +1,15 @@
 {
-    "manifest_version": 3,
-    "name": "Prompt Navigator",
-    "version": "1.0.0",
-    "description": "A Chrome extension to navigate and manage your prompts efficiently.",
-    "permissions": [
-        "activeTab"
-    ],
-    "content_scripts": [
+  "manifest_version": 3,
+  "name": "Prompt Navigator",
+  "version": "1.0.0",
+  "description": "Navigate your AI chat prompts efficiently.",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
     {
       "matches": ["https://gemini.google.com/app/*"],
-      "js": ["content/shared.js", "content/gemini.js"],
+      "js": ["content/gemini.js"],
       "css": ["styles/navigator.css"],
       "run_at": "document_idle"
     }
