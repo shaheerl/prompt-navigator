@@ -10,7 +10,13 @@
     {
       "matches": ["https://gemini.google.com/app/*"],
       "js": ["content/gemini.js"],
-      "css": ["styles/navigator.css"],
+      "css": ["styles/gemini.css"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://claude.ai/*"],
+      "js": ["content/claude.js"],
+      "css": ["styles/claude.css"],
       "run_at": "document_idle"
     }
   ]
