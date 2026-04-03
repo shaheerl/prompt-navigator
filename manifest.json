@@ -2,7 +2,23 @@
   "manifest_version": 3,
   "name": "Prompt Navigator",
   "version": "1.0.0",
-  "description": "Navigate your AI chat prompts efficiently.",
+
+  "icons": {
+    "16": "icons/pn16.png",
+    "32": "icons/pn32.png",
+    "48": "icons/pn48.png",
+    "128": "icons/pn128.png"
+  },
+
+  "action": {
+    "default_icon": {
+      "16": "icons/pn16.png",
+      "32": "icons/pn32.png"
+    },
+    "default_title": "Prompt Navigator"
+  },
+
+  "description": "Navigate your AI chat prompts efficiently.\nSupports: Gemini, Claude, ChatGPT, Copilot, Perplexity, DeepSeek, Poe, Meta AI, and Grok.",
   "permissions": [
     "activeTab"
   ],
