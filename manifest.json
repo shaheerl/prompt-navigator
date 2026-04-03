@@ -18,6 +18,48 @@
       "js": ["content/claude.js"],
       "css": ["styles/claude.css"],
       "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://chatgpt.com/c/*"],
+      "js": ["content/chatgpt.js"],
+      "css": ["styles/chatgpt.css"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://copilot.microsoft.com/*"],
+      "js": ["content/copilot.js"],
+      "css": ["styles/copilot.css"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://www.perplexity.ai/search/*"],
+      "js": ["content/perplexity.js"],
+      "css": ["styles/perplexity.css"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://chat.deepseek.com/a/chat/*"],
+      "js": ["content/deepseek.js"],
+      "css": ["styles/deepseek.css"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://poe.com/chat/*"],
+      "js": ["content/poe.js"],
+      "css": ["styles/poe.css"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://www.meta.ai/prompt/*"],
+      "js": ["content/meta.js"],
+      "css": ["styles/meta.css"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://grok.com/c/*"],
+      "js": ["content/grok.js"],
+      "css": ["styles/grok.css"],
+      "run_at": "document_idle"
     }
   ]
 }
