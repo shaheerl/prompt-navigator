@@ -18,7 +18,7 @@
     "default_title": "Prompt Navigator"
   },
 
-  "description": "Navigate your AI chat prompts efficiently.\nFor a full list of supported models visit: https://github.com/shaheerl/prompt-navigator",
+  "description": "Navigate your AI chat prompts efficiently.\nSupported models: https://github.com/shaheerl/prompt-navigator",
   "permissions": [
     "activeTab"
   ],
