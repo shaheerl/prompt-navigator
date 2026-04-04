@@ -1,4 +1,4 @@
-/* prompt navigator - perplexity styles (Position-synced) */
+/* prompt navigator - core styles */
 
 #pn-container {
   position: fixed;
@@ -9,6 +9,7 @@
   flex-direction: column;
   align-items: center;
   gap: 8px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 #pn-up,
@@ -18,7 +19,7 @@
   height: 40px;
   border-radius: 50%;
   border: none;
-  background-color: #20b8cd; /* Perplexity Cyan/Teal */
+  background-color: var(--pn-color);
   color: white;
   font-size: 20px;
   cursor: pointer;
@@ -32,7 +33,7 @@
 #pn-up:hover,
 #pn-down:hover,
 #pn-panel-toggle:hover {
-  background-color: #1793a6; /* Darker Perplexity Teal */
+  background-color: var(--pn-color-hover);
   transform: scale(1.08);
 }
 
@@ -73,8 +74,8 @@
 }
 
 .pn-item-active {
-  background-color: #e5f7f9; /* Very light cyan background */
-  color: #1793a6;
+  background-color: var(--pn-color-tint);
+  color: var(--pn-color);
   font-weight: 500;
 }
 
@@ -86,14 +87,12 @@
 }
 
 .pn-active-prompt {
-  outline: 2px solid #20b8cd !important;
+  outline: 2px solid var(--pn-color) !important;
   outline-offset: 4px;
-  /* Matches Perplexity's 'rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-none' */
-  border-radius: 16px 16px 0px 16px; 
+  border-radius: var(--pn-bubble-radius);
   transition: outline 0.2s ease;
 }
 
-/* --- Automatic Dark Mode Support --- */
 @media (prefers-color-scheme: dark) {
   #pn-panel {
     background-color: #212121;
@@ -107,7 +106,7 @@
     background-color: #2f2f2f;
   }
   .pn-item-active {
-    background-color: #1a3c40; /* Darker cyan highlight for dark mode */
-    color: #4cd3e6; /* Lighter cyan text for contrast */
+    background-color: var(--pn-color-dark-tint);
+    color: var(--pn-color-dark-text);
   }
 }

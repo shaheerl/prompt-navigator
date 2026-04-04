@@ -25,56 +25,56 @@
   "content_scripts": [
     {
       "matches": ["https://gemini.google.com/app/*"],
-      "js": ["content/gemini.js"],
-      "css": ["styles/gemini.css"],
+      "js": ["content/core.js", "content/gemini.js"],
+      "css": ["styles/core.css"],
       "run_at": "document_idle"
     },
     {
       "matches": ["https://claude.ai/*"],
-      "js": ["content/claude.js"],
-      "css": ["styles/claude.css"],
+      "js": ["content/core.js", "content/claude.js"],
+      "css": ["styles/core.css"],
       "run_at": "document_idle"
     },
     {
       "matches": ["https://chatgpt.com/c/*"],
-      "js": ["content/chatgpt.js"],
-      "css": ["styles/chatgpt.css"],
+      "js": ["content/core.js", "content/chatgpt.js"],
+      "css": ["styles/core.css"],
       "run_at": "document_idle"
     },
     {
       "matches": ["https://copilot.microsoft.com/*"],
-      "js": ["content/copilot.js"],
-      "css": ["styles/copilot.css"],
+      "js": ["content/core.js", "content/copilot.js"],
+      "css": ["styles/core.css"],
       "run_at": "document_idle"
     },
     {
       "matches": ["https://www.perplexity.ai/search/*"],
-      "js": ["content/perplexity.js"],
-      "css": ["styles/perplexity.css"],
+      "js": ["content/core.js", "content/perplexity.js"],
+      "css": ["styles/core.css"],
       "run_at": "document_idle"
     },
     {
       "matches": ["https://chat.deepseek.com/a/chat/*"],
-      "js": ["content/deepseek.js"],
-      "css": ["styles/deepseek.css"],
+      "js": ["content/core.js", "content/deepseek.js"],
+      "css": ["styles/core.css"],
       "run_at": "document_idle"
     },
     {
       "matches": ["https://poe.com/chat/*"],
-      "js": ["content/poe.js"],
-      "css": ["styles/poe.css"],
+      "js": ["content/core.js", "content/poe.js"],
+      "css": ["styles/core.css"],
       "run_at": "document_idle"
     },
     {
       "matches": ["https://www.meta.ai/prompt/*"],
-      "js": ["content/meta.js"],
-      "css": ["styles/meta.css"],
+      "js": ["content/core.js", "content/meta.js"],
+      "css": ["styles/core.css"],
       "run_at": "document_idle"
     },
     {
       "matches": ["https://grok.com/c/*"],
-      "js": ["content/grok.js"],
-      "css": ["styles/grok.css"],
+      "js": ["content/core.js", "content/grok.js"],
+      "css": ["styles/core.css"],
       "run_at": "document_idle"
     }
   ]
