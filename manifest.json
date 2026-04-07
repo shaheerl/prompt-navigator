@@ -19,9 +19,6 @@
   },
 
   "description": "Navigate your AI chat prompts efficiently.\nSupported models: https://github.com/shaheerl/prompt-navigator",
-  "permissions": [
-    "activeTab"
-  ],
   "content_scripts": [
     {
       "matches": ["https://gemini.google.com/app/*"],
